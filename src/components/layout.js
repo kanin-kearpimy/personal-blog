@@ -9,7 +9,12 @@ import {
   siteTitle
 } from './layout.module.css'
 
-const routes = [{src: '/', name: 'Home'}, {src: '/about', name: 'About'}, {src: '/blog', name: 'Blog'}]
+const routes = [
+  {src: '/', name: 'Home'}, 
+  {src: '/about', name: 'About'}, 
+  {src: '/blog', name: 'Blog'},
+  {src: '/todolist', name: 'Todo List'}
+]
 
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
